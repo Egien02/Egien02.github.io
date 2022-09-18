@@ -826,7 +826,15 @@ function over()
 	tiplayer2.text="点击鼠标左键继续挑战";
 	tiplayer2.x=145;
 	tiplayer2.y=350;
+	
+	tiplayer3=new LTextField();
+	tiplayer3.size=20;
+	tiplayer3.color="#000000";
+	tiplayer3.text="点击鼠标右键返回主页面";
+	tiplayer3.x=133;
+	tiplayer3.y=370;
 	overlayer.addChild(tiplayer2);
+	overlayer.addChild(tiplayer3);
 	stepchange=10;
 	bglayer.addEventListener(LMouseEvent.MOUSE_UP,gamestart);
 }
