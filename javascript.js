@@ -713,7 +713,13 @@ Animal.prototype.run=function()
 			
 			foodnumber+=1;
 			foodtext.text=foodnumber;
-
+			
+			if(foodnumber == 3)
+			{
+				window.alert("你已经集齐3根萝卜了很厉害了别玩了!!");
+				window.close();
+			}
+			
 			if(this.mp<this.maxmp)
 			{
 				this.mp++;
