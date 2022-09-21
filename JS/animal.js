@@ -130,11 +130,11 @@ Animal.prototype.run=function()
 			foodnumber+=1;
 			foodtext.text=foodnumber;
 			
-			if(foodnumber == 2)
+			if(foodnumber == 1)
 			{
 				var myTimer = new LTimer(1000, 1);
 				myTimer.start();
-    			 honor=new LBitmap(new LBitmapData(imglist["honor"]));
+				honor=new LBitmap(new LBitmapData(imglist["honor"]));
 				honor.y=200;
 				honor.x=140;
 				honor.alpha = 0.9;
@@ -146,8 +146,56 @@ Animal.prototype.run=function()
 					bglayer.removeChild(honor);
 				}
 				
+				honor2=new LBitmap(new LBitmapData(imglist["honoricon"]));
+				honor2.y=90;
+				honor2.x=1;
+				bglayer.addChild(honor2);
+			}
+
+			if(foodnumber == 2)
+			{
+				var myTimer = new LTimer(1000, 1);
+				myTimer.start();
+				honor=new LBitmap(new LBitmapData(imglist["honor2"]));
+				honor.y=200;
+				honor.x=140;
+				honor.alpha = 0.9;
+				bglayer.addChild(honor);
+				myTimer.addEventListener(LTimerEvent.TIMER, timerHandler);
+    			
+				
+				function timerHandler(){
+					bglayer.removeChild(honor);
+				}
+				
+				honor2=new LBitmap(new LBitmapData(imglist["honoricon2"]));
+				honor2.y=92;
+				honor2.x=25;
+				bglayer.addChild(honor2);
 			}
 			
+			if(foodnumber == 3)
+			{
+				var myTimer = new LTimer(1000, 1);
+				myTimer.start();
+				honor=new LBitmap(new LBitmapData(imglist["honor3"]));
+				honor.y=200;
+				honor.x=140;
+				honor.alpha = 0.9;
+				bglayer.addChild(honor);
+				myTimer.addEventListener(LTimerEvent.TIMER, timerHandler);
+    			
+				
+				function timerHandler(){
+					bglayer.removeChild(honor);
+				}
+				
+				honor2=new LBitmap(new LBitmapData(imglist["honoricon3"]));
+				honor2.y=84;
+				honor2.x=45;
+				bglayer.addChild(honor2);
+			}
+				
 			if(this.mp<this.maxmp)
 			{
 				this.mp++;
