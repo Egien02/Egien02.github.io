@@ -8,7 +8,7 @@ function Floor()
 }
 Floor.prototype.run=function()
 {
-	this.y=this.y-stepchange;
+	this.y=this.y-stepchange-10;
 };
 Floor.prototype.pic=function(){
 }
