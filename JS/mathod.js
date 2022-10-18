@@ -170,7 +170,7 @@ function onframe()
 	// backg.run();
 	if(temp1--<=0)
 	{
-		temp1=2;
+		temp1=4;
 		addfloor();
 	}
 	//以上是对背景滚动和添加地板
