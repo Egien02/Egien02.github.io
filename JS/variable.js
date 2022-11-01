@@ -45,5 +45,5 @@ var recover=80,hpfull=1;;//recover与回血有关,hpfull用来判断是否满血
 var tan=0;//此变量用于记录是否为处在弹跳板状态
 var floornumber=0;//参量3用来记录下了多少层
 var foodadd=30,foodnumber=0;//记录食物间隔
-var holeadd=100;//黑洞出现频率
+var holeadd=300;//黑洞出现频率
 var level=0;//游戏水平
