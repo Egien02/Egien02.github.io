@@ -178,7 +178,7 @@ function onframe()
 
 	if(holeadd-- <= 0)
 	{
-		holeadd=200;
+		holeadd=300;
 		addBlack();
 	}
 	
