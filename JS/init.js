@@ -15,6 +15,8 @@ function main()
 	
 	addChild(bglayer);
 
+	loadinglayer=new LoadingSample3();//声明进度条层及其类型
+	bglayer.addChild(loadinglayer);
 	//LLoadManage类是可以用来同时读取图片，文本以及js多种类型的文件。
 	//LLoadManage.load ( list  onUpdate  onComplete )
 	//list:指定的需要加载数据的数组。
@@ -26,7 +28,7 @@ function main()
 	LLoadManage.load(imgdata,function(progress)
         {
 			
-           
+           loadinglayer.setProgress(progress);
         },
         gameinit);//加载完毕进入gameinit函数
 }
