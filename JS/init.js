@@ -27,7 +27,7 @@ function main()
 	LLoadManage.load(imgdata,
 		function(progress)
 		{
-			loadinglayer.setProgress(progress);//setProgress设置进度条的长度百分比
+			//loadinglayer.setProgress(progress);//setProgress设置进度条的长度百分比
 		},
 		gameinit);//加载完毕进入gameinit函数
 }
