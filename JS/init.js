@@ -23,7 +23,7 @@ function main()
 
 	// sound = new LSound();
     // sound.load("./Sound/Harmonious.mp3");
-   
+   //123445
 	loadinglayer=new LoadingSample3();//声明进度条层及其类型
 	bglayer.addChild(loadinglayer);
 	LLoadManage.load(imgdata,
